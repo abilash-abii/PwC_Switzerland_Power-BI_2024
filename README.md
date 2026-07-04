@@ -1,45 +1,97 @@
-# PwC Switzerland — Power BI Job Simulation
+# PwC Power BI — Diversity & Inclusion Dashboard
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-4479A1?style=flat-square&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logoColor=white)
+> A two-page executive Power BI dashboard built during the **PwC Switzerland Power BI Job Simulation (Forage)**, analysing **six Diversity & Inclusion KPIs** — hiring, promotions, turnover, performance, executive gender balance and age profile — to help a client leadership team track and improve gender representation.
 
-## Overview
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logo=powerbi&logoColor=black)
+![HR Analytics](https://img.shields.io/badge/HR%20Analytics-7209b7?style=flat)
+![Data Modelling](https://img.shields.io/badge/Data%20Modelling-4361ee?style=flat)
 
-Completed as part of PwC Switzerland's Power BI job simulation (via Forage) — a simulated client engagement covering dashboard design for a non-technical client audience and an HR analytics investigation into gender balance.
+> ℹ️ **Context:** Completed as part of the **PwC Switzerland Power BI virtual job simulation** on Forage. The brief: build a D&I dashboard for a (simulated) client and communicate what the data says about gender balance across the employee lifecycle.
 
-## Business Problem
+![Diversity & Inclusion — Page 1](pwc/assets/diversity_inclusion_1.png)
+![Diversity & Inclusion — Page 2](pwc/assets/diversity_inclusion_2.png)
 
-Two linked problems, as briefed by the simulated client:
-1. Build dashboards that clearly convey KPIs to a client with limited technical background.
-2. Analyze HR data to identify the root causes behind a gender balance gap within the organization.
+---
 
-## Approach
+## 📖 Overview
 
-- Designed Power BI dashboards prioritizing clarity over complexity, tailored to client visualization needs
-- Communicated findings through concise, client-facing email summaries
-- Analyzed HR data to surface the underlying drivers of the gender balance issue, supporting data-driven recommendations
+The dashboard follows women through the entire employee lifecycle — **hired → promoted → rated → retained → represented at the top** — across two report pages and six KPIs, with slicers for Department, Job Level, Age group and Region.
 
-## Tech Stack
+---
 
-Power BI · DAX · Excel
+## 🎯 Business Problem
 
-## Key Insights
+Leadership wanted a single, evidence-based answer to: *"Are we treating and advancing women equitably — and if not, where exactly does the pipeline break?"* Gut feel and scattered HR reports couldn't tell them where to act.
 
-- Identified specific factors contributing to the gender balance gap within the HR dataset, forming the basis for recommended interventions
-- Practiced translating technical analysis into client-ready communication — the emails and dashboard design were built for a non-technical audience, not just for accuracy
+---
 
-## Screenshots
+## 📊 The Six KPIs
 
-*Add 1–2 dashboard screenshots here, e.g.:*
-`![Dashboard Overview](images/dashboard-overview.png)`
+| KPI | What it measures | Headline number |
+|---|---|---|
+| **1 · Hiring** | Gender split of new hires by level | **41% female / 59% male** |
+| **2 · Promotions** | Share of promotions going to women | **32% of promotees were women** |
+| **3 · Turnover** | Leaver rate by gender (FY20) | **Female 11% vs Male 9%** |
+| **4 · Performance** | Average performance rating by gender | **Women 2.42 vs Men 2.41** |
+| **5 · Executive Gender Balance** | Female share of executives | **12.5% (FY20) → 15.8% (FY21)** |
+| **6 · Age Profile** | Workforce by age group & level | concentrated in **20–39** |
 
-## How to View
+---
 
-This dashboard is a `.pbix` file, which requires Power BI Desktop to open. To make it viewable without installing anything:
-- Publish the report to the web via Power BI's "Publish to web" feature and link it here, **or**
-- Rely on the screenshots above for a quick view of the dashboard.
+## 💡 Key Insight — the "leaky pipeline"
 
-## Future Improvements
+The six KPIs tell one connected story:
 
-- Add a written summary of the client email recommendations alongside the dashboard for context
+- **Women are hired and perform equally** — 41% of hires are female, and average performance ratings are effectively identical (2.42 vs 2.41). There is **no performance gap** to explain what follows.
+- **But representation collapses with seniority** — female hiring share falls from **53% at Junior Officer to ~13% at Executive**, only **32% of promotions** go to women, and executives are just **12.5–15.8% female**.
+- **And women leave at a higher rate** — FY20 turnover is **11% for women vs 9% for men**.
+- **Executive hiring and promotions were 100% male in FY20** — the top of the pipeline isn't refilling with women.
+
+**So what:** the issue isn't *getting women in* or their *performance* — it's **retention and advancement at senior grades**. The dashboard points leadership straight at promotion equity and mid-senior retention as the levers that move executive gender balance.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Power BI Desktop** — two-page report with cross-page slicers
+- **DAX** — measures for gender ratios, promotion/turnover rates, averages and YoY comparisons
+- **Data modelling** — over the HR employee/lifecycle dataset
+- **Root cause analysis** — connecting six KPIs into one narrative
+
+---
+
+## 🧰 Skills Demonstrated
+
+`Power BI` · `DAX measures` · `HR / People analytics` · `KPI design` · `Executive dashboard design` · `Root cause analysis` · `Data storytelling` · `Diversity & inclusion metrics`
+
+---
+
+## 🗂️ Folder Structure
+
+```
+pwc-power-bi-diversity-inclusion/
+├── README.md
+├── assets/
+│   ├── diversity_inclusion_1.png     # page 1: hiring, promotions, turnover
+│   └── diversity_inclusion_2.png     # page 2: performance, exec balance, age
+├── diversity_inclusion.pbix          # Power BI report  (add your file)
+└── LICENSE
+```
+
+---
+
+## 🚀 Future Improvements
+
+- **Target lines** on each KPI (e.g., 40% female executives) with gap-to-target indicators.
+- **Cohort retention** — track a hiring cohort's promotion/attrition over time.
+- **Department drill-through** to find where the pipeline leaks most.
+
+---
+
+<p align="center">
+  <strong>Abilash K S</strong> · Business & Data Analyst<br>
+  <a href="https://portfolio-abilash-ks.vercel.app/">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/abilash-k-s/">LinkedIn</a> ·
+  <a href="mailto:abilash.connect@zohomail.in">Email</a>
+</p>
